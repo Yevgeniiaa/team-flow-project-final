@@ -1,0 +1,29 @@
+@mixin flexbox-centered($fd: row)
+    display: flex
+    flex-direction: $fd
+    justify-content: center
+    align-items: center
+
+
+@mixin button($bg-color, $text-color: #fff, $padding: 12px 24px, $radius: 8px) 
+  display: inline-block
+  background-color: $btn-yellow-bg
+  color: $main-text-color
+  border-radius: 10px
+  font-weight: bold
+  
+  &:hover 
+    background-color: darken($main-hover-color, 10%)
+
+
+@mixin shadow($type: 1) 
+    @if $type == 1 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
+    @else if $type == 2 
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15)
+
+@mixin gradient($main-bg-color, $second-bg-color, $direction: to right) 
+  background: linear-gradient($direction, $main-bg-color, $second-bg-color)
+
+
+

@@ -1,0 +1,263 @@
+@import "variables", "mixins", "reset"
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap)
+
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap)
+
+.button
+    @include flexbox-centered(column)
+
+.button-primary 
+    @include button(#ff9900)
+
+.card 
+    @include shadow(2)
+
+.gradient-bg 
+    @include gradient(#4A00E0, #FAFAFF)
+
+
+
+.main
+    width: 100%
+    height: 999px
+    background-image: url(./src/main/Rectangle.png)
+    background-repeat: no-repeat
+    background-origin: content-box
+    padding: 16px
+
+.main-decor
+    width: 100%
+    height: 100%
+    position: relative
+
+    & *
+        position: absolute
+
+    &__top-decor
+        top: 0
+        left: -410.72px
+        transform: rotate( 0.38 deg)
+
+    &__top-decor_bottom
+        top: 0
+        left: -240px
+        transform: rotate(0.38 deg)
+
+    &__bottom-decor_top
+        top: 645px
+        left: -98px
+
+    &__bottom-decor
+        top: 821px
+        left: -40px
+        transform: rotate(3.34 deg)
+
+.title-group
+    width: 677px
+    height: 523px
+    display: flex
+    flex-direction: column
+    gap: 40px
+    position: absolute
+    top: 284px
+    margin-left: 174px
+
+    &__title
+        font-family: Nunito Sans
+        font-weight: 800
+        font-size: 64px
+        line-height: 81.22px
+        color: #FFFFFF
+        width: 677px
+        height: 165px
+
+    &__text
+        width: 625px
+        height: 96px
+        font-family: Nunito Sans
+        font-weight: 400
+        font-size: 30px
+        line-height: 48.12px
+        color: #FFFFFF
+
+.line
+    background-image: url(./src/main/Line.png)
+    width: 65px
+    height: 5px
+    border-radius: 6px
+
+.comments
+    width: 815px
+    height: 721px
+    display: flex
+    flex-wrap: wrap
+    margin: -730px 0 0 915px
+
+.photo-women
+    width: 417px
+    height: 310px
+    object-fit: cover
+
+.bg
+    position: absolute
+    top: -40px
+    left: -122px
+
+    &_men
+        z-index: -1
+
+.women__comment
+    position: relative
+    width: 375px
+    height: 168px
+    border-radius: 18px
+
+.name-women
+    position: relative
+    z-index: 2
+    width: 94px
+    height: 23px
+    font-family: Nunito Sans
+    font-weight: 600
+    font-size: 18.75px
+    line-height: 23.8px
+    color: #6C71A1
+    margin: 37px 0 0 26px
+
+.h1
+    position: relative
+    z-index: 2
+    width: 297px
+    height: 26px
+    font-family: Nunito Sans
+    font-weight: 700 
+    font-size: 21.1px 
+    line-height: 26.77px
+    color:#2B3377 
+    margin: 5px 0 0 26px
+
+.button-done
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 82px
+    height: 32px
+    border-radius: 7.03px
+    background: #3ADAD9
+    font-family: Nunito Sans
+    font-weight: 400
+    font-size: 19.93px
+    line-height: 25.29px
+    text-align: center
+    color: #FFFFFF
+    position: absolute
+    top: 20px
+    right: 24px 
+
+.button_subscribe 
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 182px
+    height: 58px
+    border-radius: 20px
+    background: #686DF1
+    font-family: Nunito Sans
+    font-weight: 400
+    font-size: 19.93px
+    line-height: 25.29px
+    text-align: center
+    color: #FFFFFF
+    position: absolute
+    right: 10px
+    top: 7px
+    background-image: url(./src/subscribe/email.png)
+
+.yellow-ellips 
+    background-image: url(./src/main/Ellips.png)
+    width: 28px
+    height: 28px
+    position: absolute
+    top: 110px
+    right: 23px
+
+.yellow-vector
+    background-image: url(./src/main/Vector.png)
+    width: 37px
+    height: 37px
+    position: absolute
+    top: 125px
+    right: 25px
+    z-index: 2
+
+.stars_women
+    position: relative
+    z-index: 2
+    width: 116px
+    height: 22px
+    margin: 10px 0 0 26px
+
+.men__comment
+    z-index: 1
+    position: relative
+    width: 448px
+    height: 202px
+    border-radius: 18px
+
+.name-men
+    position: relative
+    z-index: 2
+    width: 94px
+    height: 23px
+    font-family: Nunito Sans
+    font-weight: 600
+    font-size: 18.75px
+    line-height: 23.8px
+    color: #6C71A1
+    margin: 80px 0 0 51px
+
+.h2
+    width: 356px
+    height: 32px
+    font-family: Nunito Sans
+    font-weight: 700
+    font-size: 25.25px
+    line-height: 32.04px
+    color:#2B3377
+    margin: 6px 0 0 51px
+
+.stars_men
+    display: flex
+    position: relative
+    z-index: 2
+    width: 116px
+    height: 22px
+    margin: 12px 0 0 51px
+
+.button-pending
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 112px
+    height: 39px
+    border-radius: 8.42px
+    background: #FD9B79
+    font-family: Nunito Sans
+    font-weight: 400
+    font-size: 19.93px
+    line-height: 25.29px
+    color: #FFFFFF
+    margin: -130px 0 0 338px
+
+.photo-men
+    width: 249px
+    height: 223px
+    object-fit: cover
+    margin: 0 0 0 45px
+
+
+
+
+
+
