@@ -4,7 +4,6 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="style.css")
-        cript(src="script.js")
         title Document
     body
         .container
@@ -89,17 +88,22 @@ html(lang="en")
                 .among-text-2
                     .proposition Our 
                     .yellow-text Features
-                img.map(src="Group32.png")
+                img.map(src="Group32.png" usemap="#image-map")
                 map(name="image-map")
                     area(target="t1" alt="" title="" href="" coords="211,501,30" shape="circle")
                     area(target="t2" alt="" title="" href="" coords="358,322,48" shape="circle")
                     area(target="t3" alt="" title="" href="" coords="491,265,28" shape="circle")
                     area(target="t4" alt="" title="" href="" coords="37,202,42" shape="circle")
 
-                    p.info.article-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat recusandae doloribus expedita consectetur eaque, non, consequuntur sed, mollitia labore aliquid ut quae et nostrum quis? Sunt fuga at unde.
-                    p.info Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi! Facere consequuntur placeat sit perspiciatis numquam? Dolor quo soluta optio. Illum sapiente labore fugit laboriosam facere voluptatum necessitatibus repellat ratione?
-                    p.info Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio magni, cumque fugiat velit deleniti libero deserunt saepe nemo alias nostrum, explicabo adipisci magnam obcaecati earum incidunt voluptatem neque tempore? Temporibus.
-                    p.info Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates quas aspernatur, assumenda, quaerat nemo nihil delectus temporibus corporis veritatis libero quasi rerum? Eveniet dolores quibusdam temporibus. Ea, aliquam temporibus! Odit?
+                .info-container
+                    .info-block
+                        p.info Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repellat recusandae doloribus expedita consectetur eaque, non, consequuntur sed, mollitia labore aliquid ut quae et nostrum quis? Sunt fuga at unde.
+                    .info-block
+                        p.info Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quasi! Facere consequuntur placeat sit perspiciatis numquam? Dolor quo soluta optio. Illum sapiente labore fugit laboriosam facere voluptatum necessitatibus repellat ratione?
+                    .info-block
+                        p.info Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio magni, cumque fugiat velit deleniti libero deserunt saepe nemo alias nostrum, explicabo adipisci magnam obcaecati earum incidunt voluptatem neque tempore? Temporibus.
+                    .info-block
+                        p.info Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates quas aspernatur, assumenda, quaerat nemo nihil delectus temporibus corporis veritatis libero quasi rerum? Eveniet dolores quibusdam temporibus. Ea, aliquam temporibus! Odit?  
 
 
                 .workspace-group 
@@ -114,7 +118,7 @@ html(lang="en")
                 img.boy(src="./src/minutes/boy.png", alt="")
             .program
                 .text
-                    .yellow-text Integrate  
+                    .yellow-text-2 Integrate  
                     .proposition with your existing tools in a few clicks
                 .apps 
                     img.app(src="./src/programs/zoom.png", alt="")
@@ -147,10 +151,16 @@ html(lang="en")
                     .button Read More
             
             .client 
-                .client-text
-                    .proposition Client
-                    .yellow-text Testimonials
-                .map 
+                    Testimonials
+                    img.card(src="./src/client/map.png" usemap="#image-map")
+                    map(name="image-map")
+                        area(target="t5" alt="" title="" href="" coords="867,373,49" shape="circle")
+                        area(target="t6" alt="" title="" href="" coords="375,626,50" shape="circle")
+                        area(target="t7" alt="" title="" href="" coords="629,827,40" shape="circle")
+                        area(target="t8" alt="" title="" href="" coords="486,331,32" shape="circle")
+                        area(target="t9" alt="" title="" href="" coords="1247,335,31" shape="circle")
+                        area(target="t10" alt="" title="" href="" coords="1377,625,52" shape="circle")
+                        area(target="t11" alt="" title="" href="" coords="1145,826,43" shape="circle")
 
             .subscribe-block
                 .orange-text Support
@@ -172,54 +182,53 @@ html(lang="en")
                         img.twitter(src="./src/footer/twitter.png", alt="")
                         img.youtube(src="./src/footer/youtube.png", alt="")
                 .menu
-                    li.main-title Product
-                    ul.submenu
-                        li Product
-                        li Pricing
-                        li Enterprise
-                        li Partners
-                        li Affiliate
-                        li Integrations
-                        li Developers
-                        li Students
-                        li Work OS
+                    .submenu
+                        .main-title Product
+                        ul
+                            li Product
+                            li Pricing
+                            li Enterprise
+                            li Partners
+                            li Affiliate
+                            li Integrations
+                            li Developers
+                            li Students
+                            li Work OS
 
-                    li.main-title Team
-                    ul.submenu
-                        li About Us
-                        li Contact Us
-                        li Careers
-                        li Find a Partner
-                        li In the News
+                    .submenu
+                        .main-title Team
+                        ul
+                            li About Us
+                            li Contact Us
+                            li Careers
+                            li Find a Partner
+                            li In the News
 
-                    
-                    ul.submenu
-                        li.main-title Solutions
-                        li Project Management
-                        li Marketing
-                        li CRM and Sales
-                        li Software Development
-                        li Constructions
-                        li Creative Production
-                        li Remote Work
-                        li HR
-                        li IT
-                        li See More Solutions
+                    .submenu
+                        .main-title Solutions
+                        ul
+                            li Project Management
+                            li Marketing
+                            li CRM and Sales
+                            li Software Development
+                            li Constructions
+                            li Creative Production
+                            li Remote Work
+                            li HR
+                            li IT
+                            li See More Solutions
 
-                    li.main-title Resources
-                    ul.submenu
-                        li Knowledge Base
-                        li Guides
-                        li Daily Webinars
-                        li Community
-                        li Customer Stories
-                        li Templates
-                        li Professionals Services
-                        li Video Tutorials
-                        li Blog
-                        li Podcast
-
-
-
-                    
-                
+                    .submenu
+                        .main-title Resources
+                        ul
+                            li Knowledge Base
+                            li Guides
+                            li Daily Webinars
+                            li Community
+                            li Customer Stories
+                            li Templates
+                            li Professionals Services
+                            li Video Tutorials
+                            li Blog
+                            li Podcast
+        script(src="script.js")

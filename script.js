@@ -1,37 +1,37 @@
-// Отримуємо елементи
-const targets = document.querySelectorAll("[target]");
+// Отримуємо всі області карти і параграфи
+const targets = document.querySelectorAll("area[target]");
 const infos = document.querySelectorAll(".info");
 
-console.log(infos)
+// Перевіряємо, чи елементи знайдені
+console.log("Targets found:", targets.length); // Має бути 4
+console.log("Infos found:", infos.length);    // Має бути 4
 
-// Обробник наведення на область
+// Додаємо обробники для кожної області
 targets.forEach((target, index) => {
     target.addEventListener("mouseenter", () => {
-        console.log(123)
+        console.log(`Наведено на target ${index + 1}`);
+        // Ховаємо всі параграфи
+        infos.forEach(info => info.classList.remove("active"));
+        // Показуємо тільки відповідний параграф
         infos[index].classList.add("active");
-      })
-    })
+    });
 
-
-
-// Обробник виходу з області
-targets.forEach((target, index) => {
     target.addEventListener("mouseleave", () => {
+        console.log(`Покинуто target ${index + 1}`);
+        // Ховаємо параграф
         infos[index].classList.remove("active");
-      })
-    })
+    });
+});
 
-// Додаткові обробники для самої статті
+// Додаткові обробники для параграфів (щоб залишалися видимими при наведенні на них)
 infos.forEach((info, index) => {
     info.addEventListener("mouseenter", () => {
-        infos[index].classList.add("active");
-      })
-    })
+        console.log(`Наведено на info ${index + 1}`);
+        info.classList.add("active");
+    });
 
-infos.forEach((info, index) => {
     info.addEventListener("mouseleave", () => {
-        infos[index].classList.remove("active");
-      })
-    })
-
-   
+        console.log(`Покинуто info ${index + 1}`);
+        info.classList.remove("active");
+    });
+});

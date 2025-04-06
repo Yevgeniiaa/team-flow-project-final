@@ -1,4 +1,4 @@
-@import "variables", "mixins", "reset", "main", "header"
+@import "variables", "mixins", "reset", "main", "header", "img-map"
 
 .container
     width: 1920px
@@ -205,6 +205,24 @@
     height: 658px
     margin: -268px 0 0 953px
 
+.proposition
+    font-family: Nunito Sans
+    font-weight: 600
+    font-size: 48px
+    line-height: 147%
+    letter-spacing: 2%
+    color: #565656
+    display: inline
+
+.yellow-text-2
+    font-family: Nunito Sans
+    font-weight: 700
+    font-size: 48px
+    line-height: 147%
+    letter-spacing: 2%
+    color: #FFCA1D
+    display: inline
+
 .program
     width: 1920px
     height: 1063px
@@ -245,6 +263,7 @@
     line-height: 25.29px
     text-align: center
     margin: 100px 0 0 854px
+    border: none
 
 .blue-ellipse
     background-image: url(./src/integrate/Ellipse-blue.png)
@@ -314,13 +333,11 @@
     width: 1652px
     height: 954px
 
-.client-text
-    width: 439px
-    height: 142px
-    text-align: center
-    margin: 100px 0 0 810px
-
-
+.card
+    width: 1652px
+    height: 954px
+    margin: 0 0 0 149px
+    box-shadow: none
 
 .subscribe-block
     display: flex
@@ -370,7 +387,6 @@
     position: relative
     width: 640px
     height: 72px 
-
 
 .input-wrapper::before
     content: ""
@@ -453,40 +469,41 @@
     width: 220px
     height: 40px
     margin: 16px 0 0 120px
+    display: flex
     gap: 22px
 
-.menu
+.menu 
     width: 1200px
-    height: 637px
     display: flex
-    flex-direction: column
     flex-wrap: wrap
-    gap: 0 50px
-    margin: 150px
+    gap: 50px
+    margin: 150px auto
+    justify-content: space-between
+    align-items: start
 
-.submenu
+.submenu 
     display: flex
     flex-direction: column
-    gap: 28px
+    gap: 10px
+    min-width: 200px
 
-li.main-title
-    height: 33px
+.main-title 
+    list-style: none
     font-family: Poppins
     font-weight: 500
     font-size: 22px
-    line-height: 100%
     color: #5C5E87
-    margin: 0 0 40px 0
+    margin-bottom: 20px
 
-li
-    height: 30px
+.ul
+    list-style: none
+    padding: 0
+    margin: 0
+
+.li 
+    list-style: none
     font-family: Poppins
     font-weight: 300
     font-size: 20px
-    line-height: 100%
     color: #5C5E87
-
-
-.prod
-   
-
+    height: 30px
