@@ -1,5 +1,18 @@
+.map-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: 204px;
+}
+
 .info {
   display: none;
+  position: absolute;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 .info.active {
   display: block;
@@ -13,11 +26,28 @@
   margin-top: 20px;
 }
 
-.info-block {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+.info-active {
+  position: absolute;
+  width: 300px;
   text-align: center;
+}
+
+.info-active:nth-child(1) {
+  top: 580px;
+  left: 150px;
+}
+
+.info-active:nth-child(2) {
+  top: 300px;
+  left: 30px;
+}
+
+.info-active:nth-child(3) {
+  top: 550px;
+  left: 105px;
+}
+
+.info-active:nth-child(4) {
+  top: 380px;
+  left: 252px;
 }

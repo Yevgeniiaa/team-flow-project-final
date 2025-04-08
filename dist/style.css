@@ -458,6 +458,13 @@ input {
 
 .info {
   display: none;
+  position: absolute;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 .info.active {
   display: block;
@@ -471,13 +478,30 @@ input {
   margin-top: 20px;
 }
 
-.info-block {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+.info-active {
+  position: absolute;
+  width: 200px;
   text-align: center;
+}
+
+.info-active:nth-child(1) {
+  top: 540px;
+  left: 180px;
+}
+
+.info-active:nth-child(2) {
+  top: 300px;
+  left: 320px;
+}
+
+.info-active:nth-child(3) {
+  top: 240px;
+  left: 460px;
+}
+
+.info-active:nth-child(4) {
+  top: 180px;
+  left: 0px;
 }
 
 .container {
@@ -536,11 +560,10 @@ input {
   background-repeat: no-repeat;
 }
 
-.yellow-line {
+.yellow-line, .violet-line {
   width: 70px;
-  height: 50px;
+  height: 5px;
   border-radius: 4px;
-  background-image: url(./src/view/yellow-line.png);
 }
 
 .about-us {
@@ -666,10 +689,6 @@ input {
   margin: -120px 0 0 753px;
 }
 
-.map {
-  margin-left: 204px;
-}
-
 .workspace-group {
   width: 685px;
   height: 311px;
@@ -747,11 +766,8 @@ input {
 .text {
   width: 767px;
   height: 142px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 261px 0 0 753px;
+  text-align: center;
+  margin: 261px 0 0 574px;
 }
 
 .apps {
